@@ -1,0 +1,7 @@
+		AREA LAB1Q2, CODE, READONLY
+		ENTRY
+		MOV r0, #3
+		MOV r1, #10
+		ADD r0, r1, r0
+LOOP	B LOOP
+		END

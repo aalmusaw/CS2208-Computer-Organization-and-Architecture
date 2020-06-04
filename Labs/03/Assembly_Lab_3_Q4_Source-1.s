@@ -1,0 +1,9 @@
+	AREA prog, CODE, READONLY
+		ENTRY
+		LDR r0, =0x12345678
+		LDR r1, =0x1000
+		STR r0,[r1]
+		LDRB r2,[r1]
+STOP    B STOP
+		END
+

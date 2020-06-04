@@ -1,0 +1,35 @@
+1.
+Wrote the program, including directives. 
+Got the result r0 = 0xFFFFFFFF, which is -1 is two's complement, as expected.
+
+Added r3 and r4 together, and stored temporarily in r5.
+Added r5 and r0, and stored in r0.
+Got the expected result, 0xFFFF0000
+-----------------------------------------------------------------------------
+2.
+I started with the following code:
+###############################################
+		AREA LAB1Q2, CODE, READONLY
+		ENTRY
+		MOV r0, 3
+		MOV r1, 10
+		ADD r0, r1, r0
+		END
+###############################################
+Got compiler warnings:
+#######################################################################
+LAB1Q2.s(3): warning: A1865W: '#' not seen before constant expression
+LAB1Q2.s(4): warning: A1865W: '#' not seen before constant expression
+#######################################################################
+re-built and now no warnings appear
+-----------------------------------------------------------------------------
+3.
+I built the desired program and got the expected answer.
+
+-----------------------------------------------------------------------------
+4. Done
+r0 = 0xFFFFFFFC
+-----------------------------------------------------------------------------
+5. Done
+No did not get expexted answer.
+r0 = 0x625D35C7
